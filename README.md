@@ -30,7 +30,21 @@ The drivetrain of the system consists of a DC motor with a 10 tooth gear and a 1
 ### Track Electronics
 The trackbed electronics are very simple in theory, but are currently difficult to maintain. The live third rail and grounding fourth rail are both 3d printed from PLA, with a layer of conductive copper tape stuck to the top of each. This copper tape preforms good enough for my needs, with about 5 ohms of resistance measured over 20 inches of rail. The downside of using the copper tape to add conductivity to the rails is its general structural weakness. The tape tears very easily, and wears out over time with the wires from the train car rubbing against it. Adding more tape on top of the worn tape can fix these problems, but also sometimes results in a loss of conductivity along the rail.
 
+In order for the train to control itself, RFID tags are laid within the trackbed, between sleeper planks. Standard 13.56MHz RFID tags are used, in order to keep the system lower cost and less complex.
+
+Power is provided to the third rail and grounding rail at one end of the trackbed, with a standard bench power supply.
+
 ### Track Design
+The trackbed is a simple 3 rail design, with a small fourth rail running down the center of the tracks. The main rails are spaced with 3.375" between the center of each rail, with the third rail being 1.125" to the right of the trackbed. Each rail segment is 5" in length, and is supported by a sleeper plank at each end. The overall track dimensions were built out after the train chassis was assembled, to ease the design constraints on that part of the project.
 
 
-## Coming Soon! Last updated 9-27-23
+## Current Features
+The train currently can operate autonomously on a straight section of track, with the third rail running at 12V. A command is issued to the train to start moving initially, and then the Raspberry Pi takes over and controls the train's speed by reading RFID tags, as mentioned above. The train can slow down, speed up, and come to a complete stop autonomously. 
+
+## Future Work
+As of September 2023, I am working on optimizing the drivetrain of the system so it runs smoother along the rails. I am currently experimenting with ways of adding grip to the tracks, as well as with ways to better contact the third rail for more consistent power delivery. After these two parts of the system are finished, I will begin experimenting with the train's turn radius to find a suitable dimension to build curved sections of track. I anticipate this will be a longer process, and plan on building out a longer section of straight track simultaneously, to optimize the train control system and find the speed limits of the system. 
+
+### End Notes
+I will also be updating this GitHub repo with 3d models, code, images, and more over the coming weeks, so check back periodically if you are interested in the project. 
+
+**I am also looking for work in the electrical engineering field, feel free to reach out if you have any leads.**
