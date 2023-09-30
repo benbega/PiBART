@@ -3,6 +3,8 @@ As a lifelong resident of the Bay Area, I have seen countless BART trains fly by
 
 The project outlined below is a fully custom model train, based off of the BART system. It was built to showcase skills in multiple facets of electrical engineering, as well as to be a homage to the legendary train.
 
+A brief example of the train running can be seen [here](https://youtu.be/NTuRKBK8t7I)
+
 ## System Breakdown
 At a high level, this project can be broken down into the following four major subsystems:
 
